@@ -28,7 +28,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
     }
     if (project.url) {
         links.push({
-            label: "Website",
+            label: "Site internet",
             href: project.url,
         });
     }
