@@ -1,7 +1,9 @@
 "use client";
-import {ArrowLeft, Eye, Github, Twitter} from "lucide-react";
+import {ArrowLeft, Eye, Github, Mail} from "lucide-react";
 import Link from "next/link";
 import React, {useEffect, useRef, useState} from "react";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faDiscord} from '@fortawesome/free-brands-svg-icons'
 
 type Props = {
     project: {
@@ -55,7 +57,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                 <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
                     <div className="flex justify-between gap-8">
 						<span
-                            title="View counter for this page"
+                            title="Compteur de vues pour cet article"
                             className={`duration-200 hover:font-medium flex items-center gap-1 ${
                                 isIntersecting
                                     ? " text-zinc-400 hover:text-zinc-100"
@@ -67,14 +69,15 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                 views,
                             )}
 						</span>
-                        <Link target="_blank" href="https://twitter.com/Farmeurimmo">
-                            <Twitter
+                        <Link target="_blank" href="mailto:contact@farmeurimmo.fr">
+                            <Mail
                                 className={`w-6 h-6 duration-200 hover:font-medium ${
                                     isIntersecting
                                         ? " text-zinc-400 hover:text-zinc-100"
                                         : "text-zinc-600 hover:text-zinc-900"
                                 } `}
                             />
+                            contact@farmeurimmo.fr
                         </Link>
                         <Link target="_blank" href="https://github.com/Farmeurimmo">
                             <Github
@@ -84,6 +87,17 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                         : "text-zinc-600 hover:text-zinc-900"
                                 } `}
                             />
+                            Farmeurimmo
+                        </Link>
+                        <Link target="_blank" href="https://discord.id/?prefill=423190503626899457">
+                            <FontAwesomeIcon icon={faDiscord}
+                                                className={`w-6 h-6 duration-200 hover:font-medium ${
+                                                    isIntersecting
+                                                        ? " text-zinc-400 hover:text-zinc-100"
+                                                        : "text-zinc-600 hover:text-zinc-900"
+                                                } `}
+                            />
+                            @Farmeurimmo
                         </Link>
                     </div>
 
