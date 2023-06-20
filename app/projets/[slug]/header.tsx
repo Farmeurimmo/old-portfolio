@@ -77,7 +77,6 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                         : "text-zinc-600 hover:text-zinc-900"
                                 } `}
                             />
-                            contact@farmeurimmo.fr
                         </Link>
                         <Link target="_blank" href="https://github.com/Farmeurimmo">
                             <Github
@@ -87,7 +86,6 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                         : "text-zinc-600 hover:text-zinc-900"
                                 } `}
                             />
-                            Farmeurimmo
                         </Link>
                         <Link target="_blank" href="https://discord.id/?prefill=423190503626899457">
                             <FontAwesomeIcon icon={faDiscord}
@@ -97,7 +95,6 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                                         : "text-zinc-600 hover:text-zinc-900"
                                                 } `}
                             />
-                            @Farmeurimmo
                         </Link>
                     </div>
 
