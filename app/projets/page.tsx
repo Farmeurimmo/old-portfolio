@@ -49,7 +49,8 @@ export default async function ProjectsPage() {
                     </h2>
                     <p className="mt-4 text-zinc-400">
                         Certains de ces projets sont open-source ou personnel ou fait pour des projets à part.
-                        Je poste ici les projets que je trouve intéressant de partager ou des expériences que j'ai envie de partager.
+                        Je poste ici les projets que je trouve intéressant de partager ou des expériences que j'ai envie
+                        de partager.
                     </p>
                 </div>
                 <div className="w-full h-px bg-zinc-800"/>
