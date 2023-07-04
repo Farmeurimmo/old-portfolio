@@ -3,8 +3,8 @@
 export default function Custom404() {
     return (
         <div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"/>
-            <script src="/404-background.js"/>
+            <script async src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"/>
+            <script async src="/404-background.js"/>
             <title>404 Page introuvable - Farmeurimmo</title>
             <style>
                 {`

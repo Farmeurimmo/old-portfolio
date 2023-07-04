@@ -44,13 +44,6 @@ class Square {
         this.updateColor();
     }
 
-    accelerate() {
-        for (let i = 0; i < 10; i++) {
-            this.update();
-            this.draw();
-        }
-    }
-
     updateColor() {
         this.red = Math.floor(Math.random() * 255);
         this.green = Math.floor(Math.random() * 255);
