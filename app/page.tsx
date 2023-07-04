@@ -39,7 +39,7 @@ export default function Home() {
             <div
                 className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
             <div className="my-16 text-left animate-fade-in">
-                <h2 className="text-sm text-zinc-400 ">
+                <p className="text-sm text-zinc-400 ">
                     Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web (HTML,CSS,JS/TS), C++,
                     SQL, Python
                     <br/>
@@ -69,7 +69,16 @@ export default function Home() {
                     >
                         Opale
                     </Link>{" "}
-                </h2>
+                    <br/>
+                    <br/>
+                </p>
+                <p className="text-zinc-600">
+                    Ce site est en cours de développement, l'<Link
+                    target="_blank"
+                    href="https://old.farmeurimmo.fr"
+                    className="underline duration-500 hover:text-zinc-300"
+                >ancien</Link> existe toujours temporairement mais sera down quand celui ci sera 100% opérationnel.
+                </p>
             </div>
         </div>
     );
