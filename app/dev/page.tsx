@@ -99,6 +99,9 @@ const apis = [
         niveau: 5,
         icon: <i className="fab fa-rocket">BungeeCord</i>,
     },
+]
+
+const frameworks = [
     {
         name: "Spring",
         href: "https://spring.io",
@@ -107,9 +110,6 @@ const apis = [
         niveau: 4,
         icon: <i className="fab fa-spring">Spring</i>,
     },
-]
-
-const frameworks = [
     {
         name: "React",
         href: "https://reactjs.org",
