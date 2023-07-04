@@ -1,10 +1,11 @@
-//redirect to /404
+"use client";
+
 export default function Custom404() {
     return (
         <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"/>
+            <script src="/404-background.js"/>
             <title>404 Page introuvable - Farmeurimmo</title>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
-            <script src="/404-background.js"></script>
             <style>
                 {`
                     body {
@@ -33,6 +34,8 @@ export default function Custom404() {
                       color: black;
                       font-family: 'Roboto', sans-serif;
                       text-decoration: bolder;
+                      text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
                     }
                     
                     #wrapper a {
