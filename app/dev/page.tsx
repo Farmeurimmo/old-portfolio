@@ -149,8 +149,7 @@ export default function Dev() {
             <Navigation/>
             <div className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Mes
-                        langages</h1>
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Langages</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
                     {skills.map((s, index) => (
@@ -199,7 +198,7 @@ export default function Dev() {
                     ))}
                 </div>
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Mes APIs</h1>
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">APIs</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
                     {apis.map((s, index) => (
@@ -244,8 +243,7 @@ export default function Dev() {
                     ))}
                 </div>
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Mes
-                        Frameworks</h1>
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Frameworks</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
                     {frameworks.map((s, index) => (

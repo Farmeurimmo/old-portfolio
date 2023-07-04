@@ -34,6 +34,11 @@ export const Navigation: React.FC = () => {
                             Développeur
                         </Link>
                         <Link
+                            href={"/as"}
+                            className="duration-200 text-zinc-400 hover:text-zinc-100">
+                            Administrateur système
+                        </Link>
+                        <Link
                             href="/projets"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
