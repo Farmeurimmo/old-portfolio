@@ -6,8 +6,8 @@ import {Analytics} from "./components/analytics";
 
 export const metadata: Metadata = {
     title: {
-        default: "Accueil - Farmeurimmo",
-        template: "%s - Farmeurimmo",
+        default: "404 - Farmeurimmo",
+        template: "Accueil - Farmeurimmo",
     },
     description: "Développeur et Administrateur système",
     openGraph: {
