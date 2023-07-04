@@ -41,6 +41,14 @@ const skills = [
         icon: <FontAwesomeIcon icon={faPython}/>,
     },
     {
+        name: "SQL",
+        href: "https://fr.wikipedia.org/wiki/Structured_Query_Language",
+        label: "SQL",
+        description: "SQL est un langage informatique normalisé servant à exploiter des bases de données relationnelles.",
+        niveau: 4,
+        icon: <i className="fas fa-database">SQL</i>,
+    },
+    {
         name: "C++",
         href: "https://fr.wikipedia.org/wiki/C%2B%2B",
         label: "C++",
