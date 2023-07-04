@@ -147,6 +147,7 @@ export default function Dev() {
     return (
         <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
+            <title>Développeur - Farmeurimmo</title>
             <div className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Langages</h1>

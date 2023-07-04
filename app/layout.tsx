@@ -6,16 +6,16 @@ import {Analytics} from "./components/analytics";
 
 export const metadata: Metadata = {
     title: {
-        default: "farmeurimmo.fr",
-        template: "%s | farmeurimmo.fr",
+        default: "Accueil - Farmeurimmo",
+        template: "%s - Farmeurimmo",
     },
     description: "Développeur et Administrateur système",
     openGraph: {
-        title: "farmeurimmo.fr",
+        title: "Farmeurimmo",
         description:
             "Développeur et Administrateur système",
         url: "https://farmeurimmo.fr",
-        siteName: "farmeurimmo.fr",
+        siteName: "Farmeurimmo",
         images: [
             {
                 url: "https://cdn.farmeurimmo.fr/img/logo.jpg",
