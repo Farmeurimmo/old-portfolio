@@ -89,11 +89,11 @@ export const Header: React.FC<Props> = ({project, views}) => {
                         </Link>
                         <Link target="_blank" href="https://discord.id/?prefill=423190503626899457">
                             <FontAwesomeIcon icon={faDiscord}
-                                                className={`w-6 h-6 duration-200 hover:font-medium ${
-                                                    isIntersecting
-                                                        ? " text-zinc-400 hover:text-zinc-100"
-                                                        : "text-zinc-600 hover:text-zinc-900"
-                                                } `}
+                                             className={`w-6 h-6 duration-200 hover:font-medium ${
+                                                 isIntersecting
+                                                     ? " text-zinc-400 hover:text-zinc-100"
+                                                     : "text-zinc-600 hover:text-zinc-900"
+                                             } `}
                             />
                         </Link>
                     </div>
