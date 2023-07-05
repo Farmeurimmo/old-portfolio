@@ -63,6 +63,21 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr" className={[inter.variable, calSans.variable].join(" ")}>
+        <head>
+            <meta charSet="utf-8"/>
+            <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="theme-color" content="#000000"/>
+            <meta name="description" content="Développeur et Administrateur système"/>
+            <meta property="og:title" content=""/>
+            <meta property="og:type" content=""/>
+            <meta property="og:url" content=""/>
+            <meta property="og:image" content=""/>
+            <meta property="og:locale" content="fr_FR"/>
+            <meta property="og:description" content=""/>
+            <link rel="canonical" href=""/>
+            <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.jpg"/>
+        </head>
         <body
             className={`bg-black ${
                 process.env.NODE_ENV === "development" ? "debug-screens" : undefined
