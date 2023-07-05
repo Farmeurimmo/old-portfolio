@@ -36,6 +36,7 @@ class Square {
     red = 0;
     green = 0;
     blue = 0;
+    accelerationLeft = Math.random() * 250;
 
     constructor(x, y, size) {
         this.x = x;
@@ -53,6 +54,11 @@ class Square {
     draw() {
         fill(this.red, this.green, this.blue);
         rect(this.x, this.y, this.size, this.size);
+        if (this.accelerationLeft > 0) {
+            this.accelerationLeft--;
+            this.update();
+            this.draw();
+        }
     }
 
     incrementX() {
