@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         default: "Accueil - Farmeurimmo",
         template: "%s - Farmeurimmo",
     },
-    description: "Développeur et Administrateur système",
+    description: "Développeur Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web (HTML,CSS,JS/TS), C++, SQL, Python. Administrateur Système. Amateur de cybersécurité & d'IA",
     openGraph: {
         title: "Farmeurimmo",
         description:
@@ -68,14 +68,13 @@ export default function RootLayout({
             <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <meta name="theme-color" content="#000000"/>
-            <meta name="description" content="Développeur et Administrateur système"/>
             <meta property="og:title" content=""/>
             <meta property="og:type" content=""/>
             <meta property="og:url" content=""/>
             <meta property="og:image" content=""/>
             <meta property="og:locale" content="fr_FR"/>
             <meta property="og:description" content=""/>
-            <link rel="canonical" href=""/>
+            <link rel="canonical" href="https://farmeurimmo.fr"/>
             <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.jpg"/>
         </head>
         <body
