@@ -2,7 +2,6 @@ import "../global.css";
 import {Inter} from "@next/font/google";
 import LocalFont from "@next/font/local";
 import {Metadata} from "next";
-//import {Analytics} from "./components/analytics";
 import {Analytics} from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
         default: "Accueil - Farmeurimmo",
         template: "%s - Farmeurimmo",
     },
-    description: "Développeur Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web (HTML,CSS,JS/TS), C++, SQL, Python. Administrateur Système. Amateur de cybersécurité & d'IA",
+    description: "Développeur Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web (HTML,CSS,JS/TS), C++, SQL, Python. Administrateur Système.",
     openGraph: {
         title: "Farmeurimmo",
         description:
