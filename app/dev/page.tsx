@@ -12,7 +12,7 @@ const skills = [
         href: "https://java.com",
         label: "Java",
         description: "Java est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.",
-        niveau: 4,
+        niveau: 5,
         icon: <FontAwesomeIcon icon={faJava}/>,
         handle: "",
     },
