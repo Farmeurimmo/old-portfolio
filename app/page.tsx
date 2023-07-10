@@ -75,13 +75,6 @@ export default function Home() {
                     <br/>
                     <br/>
                 </p>
-                <p className="text-zinc-600">
-                    Ce site est en cours de développement, l'<Link
-                    target="_blank"
-                    href="https://v2.farmeurimmo.fr"
-                    className="underline duration-500 hover:text-zinc-300"
-                >ancien</Link> existe toujours temporairement mais sera down quand celui ci sera 100% opérationnel.
-                </p>
             </div>
         </div>
     );
