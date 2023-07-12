@@ -13,7 +13,7 @@ const skills = [
         label: "Java",
         description: "Java est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.",
         niveau: 5,
-        icon: <FontAwesomeIcon icon={faJava}/>,
+        icon: <FontAwesomeIcon icon={faJava} className="h-12 w-12"/>,
         handle: "",
     },
     {
@@ -21,7 +21,7 @@ const skills = [
         href: "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language",
         label: "HTML",
         description: "L'HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour structurer et représenter les pages web.",
-        icon: <FontAwesomeIcon icon={faHtml5}/>,
+        icon: <FontAwesomeIcon icon={faHtml5} className="h-12 w-12"/>,
         niveau: 5,
     },
     {
@@ -30,7 +30,7 @@ const skills = [
         label: "CSS",
         description: "Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML.",
         niveau: 5,
-        icon: <FontAwesomeIcon icon={faCss3}/>,
+        icon: <FontAwesomeIcon icon={faCss3} className="h-12 w-12"/>,
     },
     {
         name: "Python",
@@ -38,7 +38,7 @@ const skills = [
         label: "Python",
         description: "Python est un langage de programmation interprété, multi-paradigme et multiplateformes.",
         niveau: 4,
-        icon: <FontAwesomeIcon icon={faPython}/>,
+        icon: <FontAwesomeIcon icon={faPython} className="h-12 w-12"/>,
     },
     {
         name: "SQL",
@@ -62,7 +62,7 @@ const skills = [
         label: "JavaScript",
         description: "JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.",
         niveau: 3,
-        icon: <FontAwesomeIcon icon={faJs}/>,
+        icon: <FontAwesomeIcon icon={faJs} className="h-12 w-12"/>,
     },
     {
         name: "TypeScript",
@@ -116,7 +116,7 @@ const frameworks = [
         label: "React",
         description: "React est un framework JavaScript libre développé par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page (ou portion) HTML à chaque changement d'état.",
         niveau: 4,
-        icon: <FontAwesomeIcon icon={faReact}/>,
+        icon: <FontAwesomeIcon icon={faReact} className="h-12 w-12"/>,
     },
 ]
 
