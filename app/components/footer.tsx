@@ -12,6 +12,10 @@ export default function Footer() {
                 Copyright © 2023 Farmeurimmo
             </Link>
             <div className="w-px h-4 bg-zinc-500/50"/>
+            <Link href="https://github.com/Farmeurimmo/portfolio" className="text-sm duration-500 text-zinc-500 hover:text-zinc-300">
+                Open source
+            </Link>
+            <div className="w-px h-4 bg-zinc-500/50"/>
             <Link
                 target="_blank"
                 href="https://status.farmeurimmo.fr"
