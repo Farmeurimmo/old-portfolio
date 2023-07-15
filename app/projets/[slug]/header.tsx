@@ -55,7 +55,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                 }`}
             >
                 <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-                    <div className="flex justify-between gap-8">
+                    <div className="flex flex-row justify-between gap-8">
 						<span
                             title="Compteur de vues pour cet article"
                             className={`duration-200 hover:font-medium flex items-center gap-1 ${
@@ -110,7 +110,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                     </Link>
                 </div>
             </div>
-            <div className="container mx-auto relative isolate overflow-hidden  py-24 sm:py-32">
+            <div className="container mx-auto relative isolate overflow-hidden py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
