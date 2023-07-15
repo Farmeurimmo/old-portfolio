@@ -1,6 +1,8 @@
 "use client";
 import {Navigation} from "../components/nav";
 import {Card} from "../components/card";
+import Footer from "@/app/components/footer";
+import React from "react";
 
 export default function Stats() {
     return (
@@ -42,6 +44,7 @@ export default function Stats() {
                 </div>
                 <div className="mt-20"/>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -1,6 +1,8 @@
 "use client";
 import {Navigation} from "../components/nav";
 import {Card} from "../components/card";
+import Footer from "@/app/components/footer";
+import React from "react";
 
 const competences = [
     {
@@ -46,6 +48,7 @@ export default function As() {
                 </div>
                 <div className="mt-32"/>
             </div>
+            <Footer/>
         </div>
     )
 }

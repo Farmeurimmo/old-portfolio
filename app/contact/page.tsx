@@ -5,6 +5,8 @@ import {Navigation} from "../components/nav";
 import {Card} from "../components/card";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDiscord} from '@fortawesome/free-brands-svg-icons'
+import Footer from "@/app/components/footer";
+import React from "react";
 
 const socials = [
     {
@@ -32,6 +34,9 @@ export default function Contact() {
         <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
             <title>Contact - Farmeurimmo</title>
+            <div id="space" className="container flex flex-col items-center justify-center px-4 mx-auto">
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Contact</h1>
+            </div>
             <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
                     {socials.map((s) => (
@@ -64,6 +69,7 @@ export default function Contact() {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

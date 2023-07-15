@@ -6,6 +6,7 @@ import {Card} from "../components/card";
 import {Article} from "./article";
 import {Redis} from "@upstash/redis";
 import {Eye} from "lucide-react";
+import Footer from "@/app/components/footer";
 
 const redis = Redis.fromEnv();
 
@@ -140,6 +141,7 @@ export default async function ProjectsPage() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

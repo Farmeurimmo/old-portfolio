@@ -4,6 +4,8 @@ import {Card} from "../components/card";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Link from "next/link";
 import {faCss3, faHtml5, faJava, faJs, faPython, faReact} from '@fortawesome/free-brands-svg-icons'
+import Footer from "@/app/components/footer";
+import React from "react";
 
 
 const skills = [
@@ -290,6 +292,7 @@ export default function Dev() {
                 </div>
                 <div className="mt-32"/>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import Footer from "@/app/components/footer";
 
 const navigation = [
     {name: "Développeur", href: "/dev"},
@@ -76,6 +77,7 @@ export default function Home() {
                     <br/>
                 </p>
             </div>
+            <Footer/>
         </div>
     );
 }
