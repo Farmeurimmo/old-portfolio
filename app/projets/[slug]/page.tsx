@@ -6,6 +6,7 @@ import "./mdx.css";
 import {ReportView} from "./view";
 import {Redis} from "@upstash/redis";
 import Footer from "@/app/components/footer";
+import React from "react";
 
 export const revalidate = 60;
 
@@ -37,11 +38,14 @@ export default async function PostPage({params}: Props) {
         (await redis.get<number>(["pageviews", "projets", slug].join(":"))) ?? 0;
 
     return (
-        <div className="bg-zinc-50 min-h-screen">
+        <div className="overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black min-h-screen">
             <Header project={project} views={views}/>
             <ReportView slug={project.slug}/>
 
-            <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+            <div
+                className="relative w-full h-px -mt-px bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
+
+            <article className="px-4 py-12 mx-auto prose prose-invert prose-quoteless">
                 <Mdx code={project.body.code}/>
             </article>
 

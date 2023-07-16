@@ -1,5 +1,5 @@
 [data-rehype-pretty-code-fragment] code {
-    @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0 text-sm text-black;
+    @apply grid min-w-full break-words rounded-none border-0 bg-gray-700 p-0 text-sm text-white;
     counter-reset: line;
     box-decoration-break: clone;
 }
@@ -15,7 +15,7 @@
     width: 1rem;
     margin-right: 1rem;
     text-align: right;
-    color: gray;
+    color: white;
 }
 
 [data-rehype-pretty-code-fragment] .line--highlighted {
