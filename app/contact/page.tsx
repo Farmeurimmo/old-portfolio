@@ -35,9 +35,9 @@ export default function Contact() {
             <Navigation/>
             <title>Contact - Farmeurimmo</title>
             <div id="space" className="container flex flex-col items-center justify-center px-4 mx-auto">
-                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Contact</h1>
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl mt-40">Contact</h1>
             </div>
-            <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+            <div className="container flex items-center justify-center min-h-fit px-4 mx-auto mt-20">
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
                     {socials.map((s) => (
                         <Card>

@@ -34,7 +34,7 @@ export default function As() {
             <Navigation/>
             <title>Administrateur Système - Farmeurimmo</title>
             <div className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
-                <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
+                <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-40">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Compétences</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
