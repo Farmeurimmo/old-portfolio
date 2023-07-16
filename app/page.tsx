@@ -65,16 +65,6 @@ export default function Home() {
                     </Link>
                     <br/>
                     <br/>
-                    Administrateur & Développeur chez{" "}
-                    <Link
-                        target="_blank"
-                        href="https://opaleuhc.fr"
-                        className="underline duration-500 hover:text-zinc-300"
-                    >
-                        Opale
-                    </Link>{" "}
-                    <br/>
-                    <br/>
                 </p>
             </div>
             <Footer/>
