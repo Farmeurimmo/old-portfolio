@@ -61,7 +61,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                             className={`duration-200 hover:font-medium flex items-center gap-1 ${
                                 isIntersecting
                                     ? " text-zinc-400 hover:text-zinc-100"
-                                    : "text-zinc-600 hover:text-zinc-900"
+                                    : "text-zinc-300 hover:text-zinc-100"
                             } `}
                         >
 							<Eye className="w-5 h-5"/>{" "}
@@ -74,7 +74,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                 className={`w-6 h-6 duration-200 hover:font-medium ${
                                     isIntersecting
                                         ? " text-zinc-400 hover:text-zinc-100"
-                                        : "text-zinc-600 hover:text-zinc-900"
+                                        : "text-zinc-300 hover:text-zinc-100"
                                 } `}
                             />
                         </Link>
@@ -83,7 +83,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                 className={`w-6 h-6 duration-200 hover:font-medium ${
                                     isIntersecting
                                         ? " text-zinc-400 hover:text-zinc-100"
-                                        : "text-zinc-600 hover:text-zinc-900"
+                                        : "text-zinc-300 hover:text-zinc-100"
                                 } `}
                             />
                         </Link>
@@ -92,7 +92,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                                              className={`w-6 h-6 duration-200 hover:font-medium ${
                                                  isIntersecting
                                                      ? " text-zinc-400 hover:text-zinc-100"
-                                                     : "text-zinc-600 hover:text-zinc-900"
+                                                     : "text-zinc-300 hover:text-zinc-100"
                                              } `}
                             />
                         </Link>
@@ -103,7 +103,7 @@ export const Header: React.FC<Props> = ({project, views}) => {
                         className={`duration-200 hover:font-medium ${
                             isIntersecting
                                 ? " text-zinc-400 hover:text-zinc-100"
-                                : "text-zinc-600 hover:text-zinc-900"
+                                : "text-zinc-300 hover:text-zinc-100"
                         } `}
                     >
                         <ArrowLeft className="w-6 h-6 "/>
