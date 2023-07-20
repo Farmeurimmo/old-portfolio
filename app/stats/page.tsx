@@ -8,7 +8,7 @@ export default function Stats() {
     return (
         <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
-            <title>Statistiques</title>
+            <title>Statistiques - Farmeurimmo</title>
             <div id="space" className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
                 <div id="space2" className="flex flex-col items-center justify-center w-full mx-auto text-center">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Quelques
