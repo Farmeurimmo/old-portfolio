@@ -5,11 +5,9 @@ import {Metadata} from "next";
 import {Analytics} from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
-    title: {
-        default: "Accueil - Farmeurimmo",
-        template: "%s - Farmeurimmo",
-    },
-    description: "Développeur Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web (HTML,CSS,JS/TS), C++, SQL, Python. Administrateur Système.",
+    description: "Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web, C++, SQL, Python. Administrateur Système.",
+    themeColor: "#1e1d1d",
+    viewport: "width=device-width, initial-scale=1",
     openGraph: {
         title: "Farmeurimmo",
         description:
@@ -64,17 +62,8 @@ export default function RootLayout({
         <html lang="fr" className={[inter.variable, calSans.variable].join(" ")}>
         <head>
             <meta charSet="utf-8"/>
-            <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <meta name="theme-color" content="#000000"/>
-            <meta property="og:title" content=""/>
-            <meta property="og:type" content=""/>
-            <meta property="og:url" content=""/>
-            <meta property="og:image" content=""/>
-            <meta property="og:locale" content="fr_FR"/>
-            <meta property="og:description" content=""/>
             <link rel="canonical" href="https://farmeurimmo.fr"/>
-            <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.jpg"/>
+            <link rel="apple-touch-icon" href="/logo.jpg"/>
         </head>
         <body
             className={`bg-black ${
