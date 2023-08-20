@@ -47,7 +47,7 @@ const skills = [
         href: "https://fr.wikipedia.org/wiki/Structured_Query_Language",
         label: "SQL",
         description: "SQL est un langage informatique normalisé servant à exploiter des bases de données relationnelles.",
-        niveau: 4,
+        niveau: 3,
         icon: <i className="fas fa-database">SQL</i>,
     },
     {
@@ -55,7 +55,7 @@ const skills = [
         href: "https://fr.wikipedia.org/wiki/C%2B%2B",
         label: "C++",
         description: "Le C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes. Ses principales instructions sont proches de celles du langage C, dont il est une extension, mais le langage supporte le polymorphisme et les objets.",
-        niveau: 3,
+        niveau: 2,
         icon: <i className="fab fa-cuttlefish">C++</i>,
     },
     {
@@ -63,7 +63,7 @@ const skills = [
         href: "https://fr.wikipedia.org/wiki/JavaScript",
         label: "JavaScript",
         description: "JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.",
-        niveau: 3,
+        niveau: 2,
         icon: <FontAwesomeIcon icon={faJs} className="h-12 w-12"/>,
     },
     {
@@ -71,7 +71,7 @@ const skills = [
         href: "https://fr.wikipedia.org/wiki/TypeScript",
         label: "TypeScript",
         description: "TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript.",
-        niveau: 3,
+        niveau: 2,
         icon: <i className="fab fa-microsoft">TS</i>,
     },
 ];
