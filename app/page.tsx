@@ -11,7 +11,7 @@ const navigation = [
     {name: "nav_dev", href: "/dev"},
     {name: "nav_as", href: "/as"},
     {name: "nav_stats", href: "/stats"},
-    {name: "nav_stats", href: "/projets"},
+    {name: "nav_bep", href: "/projets"},
     {name: "nav_contact", href: "/contact"},
 ];
 
