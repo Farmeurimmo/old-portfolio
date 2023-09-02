@@ -1,20 +1,28 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 import Footer from "@/app/components/footer";
+import './i18n';
+import {useTranslation} from 'react-i18next';
+import Lang from "@/app/components/lang";
 
 const navigation = [
-    {name: "Développeur", href: "/dev"},
-    {name: "Administrateur système", href: "/as"},
-    {name: "Statistiques", href: "/stats"},
-    {name: "Blog & Projets", href: "/projets"},
-    {name: "Contact", href: "/contact"},
+    {name: "nav_dev", href: "/dev"},
+    {name: "nav_as", href: "/as"},
+    {name: "nav_stats", href: "/stats"},
+    {name: "nav_stats", href: "/projets"},
+    {name: "nav_contact", href: "/contact"},
 ];
 
 export default function Home() {
+    const {t, i18n} = useTranslation();
+
     return (
         <div
-            className="flex flex-col items-center justify-center min-h-fit h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+            className="flex flex-col items-center justify-center min-h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+            <div className="mt-4"/>
+            <Lang/>
             <nav className="my-16 animate-fade-in" id="home">
                 <ul className="flex items-center justify-center gap-4">
                     {navigation.map((item) => (
@@ -23,12 +31,12 @@ export default function Home() {
                             href={item.href}
                             className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
                         >
-                            {item.name}
+                            {t(item.name)}
                         </Link>
                     ))}
                 </ul>
             </nav>
-            <title>Accueil - Farmeurimmo</title>
+            <title>{t('app_title')}</title>
             <div
                 className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
             <Particles
@@ -44,18 +52,17 @@ export default function Home() {
                 className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
             <div className="my-16 text-left animate-fade-in" id="home">
                 <p className="text-sm text-zinc-400 ">
-                    Développeur Java, API Minecraft : Spigot/Paper/Purpur/Bungee/Velocity, Web (HTML,CSS,JS/TS), C++,
-                    SQL, Python
+                    {t('desc_dev')}
                     <br/>
                     <br/>
-                    Administrateur Système
+                    {t('desc_as')}
                     <br/>
                     <br/>
-                    Amateur de cybersécurité & d'IA
+                    {t('desc_am_ai')}
                     <br/>
                     <br/>
                     <br/>
-                    Développeur chez{" "}
+                    {t('devat_noctis')}
                     <Link
                         target="_blank"
                         href="https://noctis.rip"
