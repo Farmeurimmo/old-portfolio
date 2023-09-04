@@ -83,6 +83,12 @@ i18n
                     contact_discord: 'Discord',
                     contact_mail: 'Email',
                     contact_github: 'Github',
+
+                    bep_title: 'Blog & Projets - Farmeurimmo',
+                    bep_h1: 'Blog & Projets',
+                    bep_desc: 'Certains de ces projets sont open-source ou personnel ou fait pour des projets à part. Je poste ici les projets que je trouve intéressant de partager ou des expériences que j\'ai envie de partager.',
+
+
                 }
             },
             en: {
@@ -158,6 +164,12 @@ i18n
                     contact_discord: 'Discord',
                     contact_mail: 'Email',
                     contact_github: 'Github',
+
+                    bep_title: 'Blog & Projects - Farmeurimmo',
+                    bep_h1: 'Blog & Projects',
+                    bep_desc: 'Some of these projects are open-source or personal or made for separate projects. I post here the projects that I find interesting to share or experiences that I want to share.',
+
+
                 }
             }
         }

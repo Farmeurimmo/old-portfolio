@@ -4,7 +4,6 @@ import {Mdx} from "@/app/components/mdx";
 import {Header} from "./header";
 import "./mdx.css";
 import {ReportView} from "./view";
-import {Redis} from "@upstash/redis";
 import Footer from "@/app/components/footer";
 import React from "react";
 
@@ -15,8 +14,6 @@ type Props = {
         slug: string;
     };
 };
-
-const redis = Redis.fromEnv();
 
 export async function generateStaticParams(): Promise<Props["params"][]> {
     return allProjects
@@ -34,8 +31,13 @@ export default async function PostPage({params}: Props) {
         notFound();
     }
 
-    const views =
-        (await redis.get<number>(["pageviews", "projets", slug].join(":"))) ?? 0;
+    let views = 0;
+    try {
+        const res = await fetch(`https://api.farmeurimmo.fr/portfolio/article/${slug}`);
+        let temp = await res.json();
+        views = temp.message;
+    } catch (e) {
+    }
 
     return (
         <div className="overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black min-h-screen">

@@ -4,22 +4,16 @@ import {allProjects} from "contentlayer/generated";
 import {Navigation} from "../components/nav";
 import {Card} from "../components/card";
 import {Article} from "./article";
-import {Redis} from "@upstash/redis";
 import {Eye} from "lucide-react";
 import Footer from "@/app/components/footer";
 
-const redis = Redis.fromEnv();
-
-export const revalidate = 60;
 export default async function ProjectsPage() {
-    const views = (
-        await redis.mget<number[]>(
-            ...allProjects.map((p) => ["pageviews", "projets", p.slug].join(":")),
-        )
-    ).reduce((acc, v, i) => {
-        acc[allProjects[i].slug] = v ?? 0;
-        return acc;
-    }, {} as Record<string, number>);
+    const res = await fetch("https://api.farmeurimmo.fr/portfolio/articles");
+    let views = await res.json();
+
+    if (views === null) {
+        views = {};
+    }
 
     const featured = allProjects.find(
         (project) => project.slug === "portfolio",
