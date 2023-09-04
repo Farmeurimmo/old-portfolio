@@ -39,6 +39,7 @@ export default function As() {
             <title>{t('as_title')}</title>
             <div className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
                 <Lang/>
+                <div className="mt-24"/>
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-20">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">{t('as_skills')}</h1>
                 </div>
