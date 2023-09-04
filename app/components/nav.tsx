@@ -37,7 +37,7 @@ export const Navigation: React.FC = () => {
                             {t('nav_dev')}
                         </Link>
                         <Link
-                            href={"/as"}
+                            href={"/sa"}
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
                             {t('nav_as')}
                         </Link>
@@ -47,7 +47,7 @@ export const Navigation: React.FC = () => {
                             {t('nav_stats')}
                         </Link>
                         <Link
-                            href="/projets"
+                            href="/projects"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
                             {t('nav_bep')}

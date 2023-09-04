@@ -1,5 +1,4 @@
 import 'app/i18n';
-import {useTranslation} from 'react-i18next';
 import ReactCountryFlag from "react-country-flag"
 
 const availabeLangs = [
@@ -8,7 +7,7 @@ const availabeLangs = [
 ]
 
 export default function Lang() {
-    const {t, i18n} = useTranslation();
+    /*const {t, i18n} = useTranslation();
 
     const handleTrans = (code: string) => {
         i18n.changeLanguage(code);
@@ -46,5 +45,6 @@ export default function Lang() {
                 </div>
             </div>
         </div>
-    );
+    );*/
+    return <></>
 }
