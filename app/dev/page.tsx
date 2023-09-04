@@ -6,71 +6,65 @@ import Link from "next/link";
 import {faCss3, faHtml5, faJava, faJs, faPython, faReact} from '@fortawesome/free-brands-svg-icons'
 import Footer from "@/app/components/footer";
 import React from "react";
+import Lang from "@/app/components/lang";
+import {useTranslation} from "react-i18next";
 
 
 const skills = [
     {
-        name: "Java",
+        name: 'dev_langs_java',
         href: "https://java.com",
-        label: "Java",
-        description: "Java est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.",
+        description: "dev_langs_java_desc",
         niveau: 5,
         icon: <FontAwesomeIcon icon={faJava} className="h-12 w-12"/>,
         handle: "",
     },
     {
-        name: "HTML",
+        name: "dev_langs_html",
         href: "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language",
-        label: "HTML",
-        description: "L'HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour structurer et représenter les pages web.",
+        description: "dev_langs_html_desc",
         icon: <FontAwesomeIcon icon={faHtml5} className="h-12 w-12"/>,
         niveau: 5,
     },
     {
-        name: "CSS",
+        name: "dev_langs_css",
         href: "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade",
-        label: "CSS",
-        description: "Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML.",
+        description: "dev_langs_css_desc",
         niveau: 5,
         icon: <FontAwesomeIcon icon={faCss3} className="h-12 w-12"/>,
     },
     {
-        name: "Python",
+        name: "dev_langs_python",
         href: "https://fr.wikipedia.org/wiki/Python_(langage)",
-        label: "Python",
-        description: "Python est un langage de programmation interprété, multi-paradigme et multiplateformes.",
+        description: "dev_langs_python_desc",
         niveau: 4,
         icon: <FontAwesomeIcon icon={faPython} className="h-12 w-12"/>,
     },
     {
-        name: "SQL",
+        name: "dev_langs_sql",
         href: "https://fr.wikipedia.org/wiki/Structured_Query_Language",
-        label: "SQL",
-        description: "SQL est un langage informatique normalisé servant à exploiter des bases de données relationnelles.",
+        description: "dev_langs_sql_desc",
         niveau: 3,
         icon: <i className="fas fa-database">SQL</i>,
     },
     {
-        name: "C++",
+        name: "dev_langs_cpp",
         href: "https://fr.wikipedia.org/wiki/C%2B%2B",
-        label: "C++",
-        description: "Le C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes. Ses principales instructions sont proches de celles du langage C, dont il est une extension, mais le langage supporte le polymorphisme et les objets.",
+        description: "dev_langs_cpp_desc",
         niveau: 2,
         icon: <i className="fab fa-cuttlefish">C++</i>,
     },
     {
-        name: "JavaScript",
+        name: "dev_langs_js",
         href: "https://fr.wikipedia.org/wiki/JavaScript",
-        label: "JavaScript",
-        description: "JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.",
+        description: "dev_langs_js_desc",
         niveau: 2,
         icon: <FontAwesomeIcon icon={faJs} className="h-12 w-12"/>,
     },
     {
-        name: "TypeScript",
+        name: "dev_langs_ts",
         href: "https://fr.wikipedia.org/wiki/TypeScript",
-        label: "TypeScript",
-        description: "TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript.",
+        description: "dev_langs_ts_desc",
         niveau: 2,
         icon: <i className="fab fa-microsoft">TS</i>,
     },
@@ -78,26 +72,23 @@ const skills = [
 
 const apis = [
     {
-        name: "API Spigot/Paper/Purpur",
+        name: "dev_apis_spigot",
         href: "https://papermc.io",
-        label: "API Spigot/Paper/Purpur",
-        description: "L'API spigot est une API Java permettant de créer des plugins pour le serveur Minecraft Spigot.",
+        description: "dev_apis_spigot_desc",
         niveau: 5,
         icon: <i className="fab fa-paper-plane">Paper</i>,
     },
     {
-        name: "API Velocity",
+        name: "dev_apis_velocity",
         href: "https://velocitypowered.com",
-        label: "API Velocity",
-        description: "L'API Velocity est une API Java permettant de créer des plugins pour le proxy Velocity.",
+        description: "dev_apis_velocity_desc",
         niveau: 5,
         icon: <i className="fab fa-rocket">Velocity</i>,
     },
     {
-        name: "API BungeeCord",
+        name: "dev_apis_bungeecord",
         href: "https://www.spigotmc.org",
-        label: "API BungeeCord",
-        description: "L'API BungeeCord est une API Java permettant de créer des plugins pour le proxy BungeeCord.",
+        description: "dev_apis_bungeecord_desc",
         niveau: 5,
         icon: <i className="fab fa-rocket">BungeeCord</i>,
     },
@@ -105,18 +96,16 @@ const apis = [
 
 const frameworks = [
     {
-        name: "Spring",
+        name: "dev_frameworks_spring",
         href: "https://spring.io",
-        label: "Spring",
-        description: "Spring est un framework libre pour construire et définir l'infrastructure d'une application Java, dont il facilite le développement et les tests.",
+        description: "dev_frameworks_spring_desc",
         niveau: 4,
         icon: <i className="fab fa-spring">Spring</i>,
     },
     {
-        name: "React",
+        name: "dev_frameworks_react",
         href: "https://reactjs.org",
-        label: "React",
-        description: "React est un framework JavaScript libre développé par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page (ou portion) HTML à chaque changement d'état.",
+        description: "dev_frameworks_react_desc",
         niveau: 4,
         icon: <FontAwesomeIcon icon={faReact} className="h-12 w-12"/>,
     },
@@ -124,35 +113,38 @@ const frameworks = [
 
 const listOfLevels = [
     {
-        name: "Débutant",
+        name: "dev_level_1",
         num: 1,
     },
     {
-        name: "Débutant-Moyen",
+        name: "dev_level_2",
         num: 2,
     },
     {
-        name: "Moyen",
+        name: "dev_level_3",
         num: 3,
     },
     {
-        name: "Avancé",
+        name: "dev_level_4",
         num: 4,
     },
     {
-        name: "Maîtrisé",
+        name: "dev_level_5",
         num: 5,
     },
 ]
 
 export default function Dev() {
+    const {t} = useTranslation();
+
     return (
         <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
-            <title>Développeur - Farmeurimmo</title>
+            <title>{t('dev_title')}</title>
             <div className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
-                <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-40">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Langages</h1>
+                <Lang/>
+                <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-20">
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">{t('dev_langs')}</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
                     {skills.map((s, index) => (
@@ -177,10 +169,10 @@ export default function Dev() {
 									</span>
                                     <span
                                         className="text-sm font-medium duration-150 lg:text-1xl text-zinc-200 group-hover:text-white font-display">
-                                        {s.name}
+                                        {t(s.name)}
                                     </span>
                                     <span className="mt-4 text-sm text-center text-zinc-400 group-hover:text-zinc-200">
-                                        {s.description}
+                                        {t(s.description)}
                                     </span>
                                     <div className="mt-4 text-sm text-center text-zinc-400 group-hover:text-zinc-200">
                                         {listOfLevels.map((l) => (
@@ -189,9 +181,9 @@ export default function Dev() {
                                                     <span className="text-red-400">■</span>}
                                             </span>
                                         ))}
-                                        <p>Niveau {listOfLevels.map((l) => (
+                                        <p>{t('dev_level')} {listOfLevels.map((l) => (
                                             <span className="font-bold">
-                                                {l.num === s.niveau ? <span>{l.name}</span> : null}
+                                                {l.num === s.niveau ? <span>{t(l.name)}</span> : null}
                                             </span>
                                         ))}</p>
                                     </div>
@@ -201,7 +193,7 @@ export default function Dev() {
                     ))}
                 </div>
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">APIs</h1>
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">{t('dev_apis')}</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
                     {apis.map((s, index) => (
@@ -222,10 +214,10 @@ export default function Dev() {
                                 <div className="z-10 flex flex-col items-center">
                                     <span
                                         className="text-sm font-medium duration-150 lg:text-1xl text-zinc-200 group-hover:text-white font-display">
-                                        {s.name}
+                                        {t(s.name)}
                                     </span>
                                     <span className="mt-4 text-sm text-center text-zinc-400 group-hover:text-zinc-200">
-                                        {s.description}
+                                        {t(s.description)}
                                     </span>
                                     <div className="mt-4 text-sm text-center text-zinc-400 group-hover:text-zinc-200">
                                         {listOfLevels.map((l) => (
@@ -234,9 +226,9 @@ export default function Dev() {
                                                     <span className="text-red-400">■</span>}
                                             </span>
                                         ))}
-                                        <p>Niveau {listOfLevels.map((l) => (
+                                        <p>{t('dev_level')} {listOfLevels.map((l) => (
                                             <span className="font-bold">
-                                                {l.num === s.niveau ? <span>{l.name}</span> : null}
+                                                {l.num === s.niveau ? <span>{t(l.name)}</span> : null}
                                             </span>
                                         ))}</p>
                                     </div>
@@ -246,7 +238,7 @@ export default function Dev() {
                     ))}
                 </div>
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Frameworks</h1>
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">{t('dev_frameworks')}</h1>
                 </div>
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
                     {frameworks.map((s, index) => (
@@ -267,10 +259,10 @@ export default function Dev() {
                                 <div className="z-10 flex flex-col items-center">
                                     <span
                                         className="text-sm font-medium duration-150 lg:text-1xl text-zinc-200 group-hover:text-white font-display">
-                                        {s.name}
+                                        {t(s.name)}
                                     </span>
                                     <span className="mt-4 text-sm text-center text-zinc-400 group-hover:text-zinc-200">
-                                        {s.description}
+                                        {t(s.description)}
                                     </span>
                                     <div className="mt-4 text-sm text-center text-zinc-400 group-hover:text-zinc-200">
                                         {listOfLevels.map((l) => (
@@ -279,9 +271,9 @@ export default function Dev() {
                                                     <span className="text-red-400">■</span>}
                                             </span>
                                         ))}
-                                        <p>Niveau {listOfLevels.map((l) => (
+                                        <p>{t('dev_level')} {listOfLevels.map((l) => (
                                             <span className="font-bold">
-                                                {l.num === s.niveau ? <span>{l.name}</span> : null}
+                                                {l.num === s.niveau ? <span>{t(l.name)}</span> : null}
                                             </span>
                                         ))}</p>
                                     </div>

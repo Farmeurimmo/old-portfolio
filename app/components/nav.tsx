@@ -2,6 +2,7 @@
 import {ArrowLeft} from "lucide-react";
 import Link from "next/link";
 import React, {useEffect, useRef, useState} from "react";
+import {useTranslation} from "react-i18next";
 
 export const Navigation: React.FC = () => {
     const ref = useRef<HTMLElement>(null);
@@ -17,6 +18,8 @@ export const Navigation: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
+    const {t} = useTranslation();
+
     return (
         <header ref={ref}>
             <div
@@ -31,29 +34,29 @@ export const Navigation: React.FC = () => {
                         <Link
                             href="/dev"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            Développeur
+                            {t('nav_dev')}
                         </Link>
                         <Link
                             href={"/as"}
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            Administrateur système
+                            {t('nav_as')}
                         </Link>
                         <Link
                             href="/stats"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            Statistiques
+                            {t('nav_stats')}
                         </Link>
                         <Link
                             href="/projets"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
-                            Blog & Projets
+                            {t('nav_bep')}
                         </Link>
                         <Link
                             href="/contact"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
-                            Contact
+                            {t('nav_contact')}
                         </Link>
                     </div>
 

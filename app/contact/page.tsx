@@ -7,35 +7,40 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDiscord} from '@fortawesome/free-brands-svg-icons'
 import Footer from "@/app/components/footer";
 import React from "react";
+import Lang from "@/app/components/lang";
+import {useTranslation} from "react-i18next";
 
 const socials = [
     {
         icon: <Mail size={20}/>,
         href: "mailto:contact@farmeurimmo.fr",
-        label: "Email",
+        label: "contact_mail",
         handle: "contact@farmeurimmo.fr",
     },
     {
         icon: <Github size={20}/>,
         href: "https://github.com/Farmeurimmo",
-        label: "Github",
+        label: "contact_github",
         handle: "Farmeurimmo",
     },
     {
         icon: <FontAwesomeIcon icon={faDiscord}/>,
         href: "https://discord.id/?prefill=423190503626899457",
-        label: "Discord",
+        label: "contact_discord",
         handle: "@Farmeurimmo",
     },
 ];
 
 export default function Contact() {
+    const [t] = useTranslation();
+
     return (
         <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
-            <title>Contact - Farmeurimmo</title>
+            <title>{t('contact_title')}</title>
             <div id="space" className="container flex flex-col items-center justify-center px-4 mx-auto">
-                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl mt-40">Contact</h1>
+                <Lang/>
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl mt-20">Contact</h1>
             </div>
             <div className="container flex items-center justify-center min-h-fit px-4 mx-auto mt-20">
                 <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
@@ -61,7 +66,7 @@ export default function Contact() {
 									</span>
                                     <span
                                         className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-										{s.label}
+										{t(s.label)}
 									</span>
                                 </div>
                             </Link>
