@@ -18,7 +18,7 @@ export const Navigation: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
-    const {t} = useTranslation();
+    //const {t} = useTranslation();
 
     return (
         <header ref={ref}>
@@ -34,29 +34,29 @@ export const Navigation: React.FC = () => {
                         <Link
                             href="/dev"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            {t('nav_dev')}
+                            Développeur
                         </Link>
                         <Link
                             href={"/sa"}
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            {t('nav_as')}
+                            Administrateur Système
                         </Link>
                         <Link
                             href="/stats"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            {t('nav_stats')}
+                            Statistiques
                         </Link>
                         <Link
                             href="/projects"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
-                            {t('nav_bep')}
+                            Blog & Projets
                         </Link>
                         <Link
                             href="/contact"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
-                            {t('nav_contact')}
+                            Contact
                         </Link>
                     </div>
 
