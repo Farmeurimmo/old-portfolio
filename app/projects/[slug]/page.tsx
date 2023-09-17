@@ -34,8 +34,7 @@ export default async function PostPage({params}: Props) {
     let views = 0;
     try {
         const res = await fetch(`https://api.farmeurimmo.fr/portfolio/article/${slug}`);
-        let temp = await res.json();
-        views = temp.message;
+        views = await res.json()
     } catch (e) {
     }
 
