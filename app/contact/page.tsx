@@ -38,7 +38,7 @@ export default function Contact() {
         <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
             <title>{t('contact_title')}</title>
-            <div className="mt-24"/>
+            <div id="phone-space"/>
             <div id="space" className="container flex flex-col items-center justify-center px-4 mx-auto">
                 <Lang/>
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl mt-20">Contact</h1>

@@ -41,7 +41,7 @@ export default async function ProjectsPage() {
     return (
         <div className="relative pb-16">
             <Navigation/>
-            <div id="space"/>
+            <div id="phone-space"/>
             <title>Blog & Projets - Farmeurimmo</title>
             <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
                 <div className="max-w-2xl mx-auto lg:mx-0 mt-20">

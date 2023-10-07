@@ -40,6 +40,11 @@ export const Navigation: React.FC = () => {
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
                             Administrateur Système
                         </Link>
+                        <Link href={"/provider"}
+                              className="duration-200 text-zinc-400 hover:text-zinc-100">
+                            Provider
+                            <div className="bg-blue-800 w-1 h-0.5 rounded-full animate-bar"/>
+                        </Link>
                         <Link
                             href="/stats"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
