@@ -26,7 +26,7 @@ export default function Footer() {
                 href="https://status.farmeurimmo.fr"
                 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
             >
-                Statut des services
+                Services Status
             </Link>
         </footer>
     );

@@ -33,23 +33,28 @@ export const Navigation: React.FC = () => {
                         <Link
                             href="/dev"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            Développeur
+                            Developer
                         </Link>
                         <Link
                             href={"/sa"}
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            Administrateur Système
+                            System Administrator
+                        </Link>
+                        <Link href={"/provider"}
+                              className="duration-200 text-zinc-400 hover:text-zinc-100">
+                            Provider
+                            <div className="bg-blue-800 w-1 h-0.5 rounded-full animate-bar"/>
                         </Link>
                         <Link
                             href="/stats"
                             className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            Statistiques
+                            Stats
                         </Link>
                         <Link
                             href="/projects"
                             className="duration-200 text-zinc-400 hover:text-zinc-100"
                         >
-                            Blog & Projets
+                            Blog & Projects
                         </Link>
                         <Link
                             href="/contact"

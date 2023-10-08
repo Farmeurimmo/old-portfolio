@@ -10,6 +10,7 @@ import Lang from "@/app/components/lang";
 const navigation = [
     {name: "nav_dev", href: "/dev"},
     {name: "nav_as", href: "/sa"},
+    {name: "nav_provider", href: "/provider", isAnimated: true},
     {name: "nav_stats", href: "/stats"},
     {name: "nav_bep", href: "/projects"},
     {name: "nav_contact", href: "/contact"},
@@ -32,6 +33,7 @@ export default function Home() {
                             className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
                         >
                             {t(item.name)}
+                            {item.isAnimated && <div className="bg-blue-800 w-1 h-0.5 rounded-full animate-bar"/>}
                         </Link>
                     ))}
                 </ul>
@@ -60,6 +62,8 @@ export default function Home() {
                     <br/>
                     {t('desc_am_ai')}
                     <br/>
+                    <br/>
+                    {t('desc_provider')}
                     <br/>
                     <br/>
                     {t('devat_noctis')}
