@@ -33,7 +33,7 @@ export default async function PostPage({params}: Props) {
 
     let views = 0;
     try {
-        const res = await fetch(`https://api.farmeurimmo.fr/portfolio/article/${slug}`);
+        const res = await fetch(`https://api.farmeurimmo.fr/v1/portfolio/article/${slug}`);
         views = await res.json()
     } catch (e) {
     }

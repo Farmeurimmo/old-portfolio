@@ -8,7 +8,7 @@ import {Eye} from "lucide-react";
 import Footer from "@/app/components/footer";
 
 export default async function ProjectsPage() {
-    const res = await fetch("https://api.farmeurimmo.fr/portfolio/articles", {
+    const res = await fetch("https://api.farmeurimmo.fr/v1/portfolio/articles", {
         headers: {
             "Cache-Control": "no-cache, max-age=5",
         },
