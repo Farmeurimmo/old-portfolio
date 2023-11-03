@@ -48,13 +48,6 @@ const skills = [
         icon: <i className="fas fa-database">SQL</i>,
     },
     {
-        name: "dev_langs_cpp",
-        href: "https://fr.wikipedia.org/wiki/C%2B%2B",
-        description: "dev_langs_cpp_desc",
-        niveau: 2,
-        icon: <i className="fab fa-cuttlefish">C++</i>,
-    },
-    {
         name: "dev_langs_js",
         href: "https://fr.wikipedia.org/wiki/JavaScript",
         description: "dev_langs_js_desc",
