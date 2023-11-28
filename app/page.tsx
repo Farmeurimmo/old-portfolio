@@ -53,6 +53,17 @@ export default function Home() {
             <div
                 className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
             <div className="my-16 text-left animate-fade-in" id="home">
+                <h2 className="text-2xl font-bold text-zinc-300">
+                    A new version of the website is coming soon (see it on <Link
+                    target="_blank"
+                    href="https://v4.farmeurimmo.fr"
+                    className="underline duration-500 hover:text-zinc-300"
+                >
+                    here
+                </Link>.)
+                </h2>
+                <br/>
+                <br/>
                 <p className="text-sm text-zinc-400 ">
                     {t('desc_dev')}
                     <br/>
