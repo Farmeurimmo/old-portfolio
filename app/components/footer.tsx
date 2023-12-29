@@ -17,7 +17,7 @@ export default function Footer() {
             </Link>
             <Link
                 target="_blank"
-                href="https://github.com/Farmeurimmo/portfolio"
+                href="https://github.com/Farmeurimmo/old-portfolio"
                 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300">
                 Open Source
             </Link>
