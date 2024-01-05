@@ -13,7 +13,7 @@ export default function Footer() {
                 href="https://farmeurimmo.fr"
                 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
             >
-                Copyright © 2023 Farmeurimmo
+                Copyright © 2024 Farmeurimmo
             </Link>
             <Link
                 target="_blank"
