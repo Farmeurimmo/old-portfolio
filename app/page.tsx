@@ -75,13 +75,13 @@ export default function Home() {
                     </Link>
                     <br/>
                     <br/>
-                    (not public) {t('devat_noctis')}
+                    {t('devat_noctis')}
                     <Link
                         target="_blank"
-                        href="https://dymuno.com"
+                        href="https://edmine.fr"
                         className="underline duration-500 hover:text-zinc-300"
                     >
-                        Dymuno
+                        Edmine
                     </Link>
                     <br/>
                     <br/>
