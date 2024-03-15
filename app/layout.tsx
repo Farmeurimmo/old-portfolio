@@ -62,7 +62,7 @@ export default function RootLayout({
         <html lang="fr" className={[inter.variable, calSans.variable].join(" ")}>
         <head>
             <meta charSet="utf-8"/>
-            <link rel="canonical" href="https://farmeurimmo.fr"/>
+            <link rel="canonical" href="https://farmeurimmo.fr/"/>
             <link rel="apple-touch-icon" href="/logo.jpg"/>
         </head>
         <body
